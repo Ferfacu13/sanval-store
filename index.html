@@ -1,828 +1,828 @@
-!DOCTYPE html
-html lang=en
-head
-    meta charset=UTF-8
-    meta name=viewport content=width=device-width, initial-scale=1.0
-    titleSANVAL  Premium Presale Store UStitle
-    link rel=preconnect href=httpsfonts.googleapis.com
-    link rel=preconnect href=httpsfonts.gstatic.com crossorigin
-    link href=httpsfonts.googleapis.comcss2family=Plus+Jakarta+Sanswght@300;400;500;600;700;800&display=swap rel=stylesheet
-    style
-        root {
-            --bg-primary #0b0f17;
-            --bg-secondary #111827;
-            --bg-card #1f2937;
-            --border-color rgba(255, 255, 255, 0.08);
-            --accent #3b82f6;
-            --accent-hover #2563eb;
-            --accent-glow rgba(59, 130, 246, 0.35);
-            --whatsapp #25d366;
-            --whatsapp-hover #1da851;
-            --text-primary #f9fafb;
-            --text-secondary #9ca3af;
-            --text-muted #6b7280;
-            --tag-bg rgba(59, 130, 246, 0.12);
-            --radius-lg 16px;
-            --radius-md 12px;
-            --radius-sm 8px;
-            --shadow-card 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-            --transition all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANVAL | Premium Presale Store US</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0b0f17;
+            --bg-secondary: #111827;
+            --bg-card: #1f2937;
+            --border-color: rgba(255, 255, 255, 0.08);
+            --accent: #3b82f6;
+            --accent-hover: #2563eb;
+            --accent-glow: rgba(59, 130, 246, 0.35);
+            --whatsapp: #25d366;
+            --whatsapp-hover: #1da851;
+            --text-primary: #f9fafb;
+            --text-secondary: #9ca3af;
+            --text-muted: #6b7280;
+            --tag-bg: rgba(59, 130, 246, 0.12);
+            --radius-lg: 16px;
+            --radius-md: 12px;
+            --radius-sm: 8px;
+            --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+            --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-         {
-            box-sizing border-box;
-            margin 0;
-            padding 0;
-            font-family 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-            -webkit-font-smoothing antialiased;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            -webkit-font-smoothing: antialiased;
         }
 
         body {
-            background-color var(--bg-primary);
-            color var(--text-primary);
-            line-height 1.5;
-            padding-bottom 60px;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            padding-bottom: 60px;
         }
 
-         Top Bar Announcement 
+        /* Top Bar Announcement */
         .announcement-bar {
-            background linear-gradient(90deg, #1e3a8a, #3b82f6);
-            color #ffffff;
-            font-size 0.85rem;
-            font-weight 600;
-            text-align center;
-            padding 8px 16px;
-            letter-spacing 0.5px;
+            background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+            color: #ffffff;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-align: center;
+            padding: 8px 16px;
+            letter-spacing: 0.5px;
         }
 
-         Header 
+        /* Header */
         header {
-            background rgba(17, 24, 39, 0.85);
-            backdrop-filter blur(16px);
-            -webkit-backdrop-filter blur(16px);
-            border-bottom 1px solid var(--border-color);
-            position sticky;
-            top 0;
-            z-index 100;
-            padding 1rem 2rem;
-            display flex;
-            justify-content space-between;
-            align-items center;
+            background: rgba(17, 24, 39, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .brand-container {
-            display flex;
-            align-items center;
-            gap 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
 
         .logo {
-            font-size 1.6rem;
-            font-weight 800;
-            letter-spacing 2.5px;
-            background linear-gradient(135deg, #ffffff 30%, #3b82f6 100%);
-            -webkit-background-clip text;
-            -webkit-text-fill-color transparent;
+            font-size: 1.6rem;
+            font-weight: 800;
+            letter-spacing: 2.5px;
+            background: linear-gradient(135deg, #ffffff 30%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .badge-presale {
-            background rgba(239, 68, 68, 0.2);
-            color #ef4444;
-            border 1px solid rgba(239, 68, 68, 0.3);
-            font-size 0.7rem;
-            font-weight 700;
-            padding 3px 8px;
-            border-radius 20px;
-            text-transform uppercase;
-            letter-spacing 1px;
+            background: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .nav-actions {
-            display flex;
-            align-items center;
-            gap 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
         }
 
         .btn-guide {
-            background transparent;
-            border 1px solid var(--border-color);
-            color var(--text-primary);
-            padding 8px 16px;
-            border-radius var(--radius-sm);
-            font-size 0.9rem;
-            font-weight 600;
-            cursor pointer;
-            transition var(--transition);
-            display flex;
-            align-items center;
-            gap 6px;
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 8px 16px;
+            border-radius: var(--radius-sm);
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
 
-        .btn-guidehover {
-            border-color var(--accent);
-            color var(--accent);
+        .btn-guide:hover {
+            border-color: var(--accent);
+            color: var(--accent);
         }
 
         .cart-trigger {
-            background var(--accent);
-            color white;
-            border none;
-            padding 8px 18px;
-            border-radius 30px;
-            font-weight 700;
-            font-size 0.9rem;
-            cursor pointer;
-            display flex;
-            align-items center;
-            gap 8px;
-            transition var(--transition);
-            box-shadow 0 4px 15px var(--accent-glow);
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px var(--accent-glow);
         }
 
-        .cart-triggerhover {
-            background var(--accent-hover);
-            transform translateY(-1px);
+        .cart-trigger:hover {
+            background: var(--accent-hover);
+            transform: translateY(-1px);
         }
 
         .cart-badge {
-            background white;
-            color var(--bg-primary);
-            border-radius 50%;
-            width 22px;
-            height 22px;
-            display inline-flex;
-            align-items center;
-            justify-content center;
-            font-size 0.8rem;
-            font-weight 800;
+            background: white;
+            color: var(--bg-primary);
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 800;
         }
 
-         Hero Banner 
+        /* Hero Banner */
         .hero {
-            max-width 1280px;
-            margin 2rem auto 1rem;
-            padding 0 1.5rem;
+            max-width: 1280px;
+            margin: 2rem auto 1rem;
+            padding: 0 1.5rem;
         }
 
         .hero-card {
-            background linear-gradient(135deg, rgba(31, 41, 55, 0.9), rgba(17, 24, 39, 0.95));
-            border 1px solid var(--border-color);
-            border-radius var(--radius-lg);
-            padding 2.5rem;
-            display flex;
-            justify-content space-between;
-            align-items center;
-            gap 2rem;
-            box-shadow var(--shadow-card);
-            position relative;
-            overflow hidden;
+            background: linear-gradient(135deg, rgba(31, 41, 55, 0.9), rgba(17, 24, 39, 0.95));
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            box-shadow: var(--shadow-card);
+            position: relative;
+            overflow: hidden;
         }
 
-        .hero-cardafter {
-            content '';
-            position absolute;
-            top -50%;
-            right -20%;
-            width 400px;
-            height 400px;
-            background radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-            z-index 0;
-            pointer-events none;
+        .hero-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+            z-index: 0;
+            pointer-events: none;
         }
 
         .hero-text {
-            max-width 650px;
-            position relative;
-            z-index 1;
+            max-width: 650px;
+            position: relative;
+            z-index: 1;
         }
 
         .hero-title {
-            font-size 2.2rem;
-            font-weight 800;
-            margin-bottom 0.75rem;
-            line-height 1.2;
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 0.75rem;
+            line-height: 1.2;
         }
 
         .hero-desc {
-            color var(--text-secondary);
-            font-size 1rem;
-            margin-bottom 1.5rem;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         .hero-pills {
-            display flex;
-            flex-wrap wrap;
-            gap 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .pill {
-            background rgba(255, 255, 255, 0.05);
-            border 1px solid var(--border-color);
-            color var(--text-secondary);
-            padding 6px 14px;
-            border-radius 20px;
-            font-size 0.85rem;
-            display flex;
-            align-items center;
-            gap 6px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
 
-         Category Filter Navigation 
+        /* Category Filter Navigation */
         .categories-wrapper {
-            max-width 1280px;
-            margin 1.5rem auto;
-            padding 0 1.5rem;
+            max-width: 1280px;
+            margin: 1.5rem auto;
+            padding: 0 1.5rem;
         }
 
         .category-scroll {
-            display flex;
-            gap 10px;
-            overflow-x auto;
-            padding-bottom 10px;
-            scrollbar-width thin;
-            scrollbar-color var(--bg-card) transparent;
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+            scrollbar-width: thin;
+            scrollbar-color: var(--bg-card) transparent;
         }
 
         .category-btn {
-            background var(--bg-secondary);
-            border 1px solid var(--border-color);
-            color var(--text-secondary);
-            padding 10px 20px;
-            border-radius 30px;
-            font-size 0.9rem;
-            font-weight 600;
-            white-space nowrap;
-            cursor pointer;
-            transition var(--transition);
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: var(--transition);
         }
 
-        .category-btnhover {
-            border-color var(--accent);
-            color var(--text-primary);
+        .category-btn:hover {
+            border-color: var(--accent);
+            color: var(--text-primary);
         }
 
         .category-btn.active {
-            background var(--accent);
-            color white;
-            border-color var(--accent);
-            box-shadow 0 4px 12px var(--accent-glow);
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+            box-shadow: 0 4px 12px var(--accent-glow);
         }
 
-         Main Catalog Section 
+        /* Main Catalog Section */
         .main-container {
-            max-width 1280px;
-            margin 0 auto;
-            padding 0 1.5rem;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
         }
 
         .section-header {
-            display flex;
-            justify-content space-between;
-            align-items center;
-            margin-bottom 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
         }
 
         .section-title {
-            font-size 1.4rem;
-            font-weight 700;
+            font-size: 1.4rem;
+            font-weight: 700;
         }
 
         .product-count {
-            color var(--text-muted);
-            font-size 0.9rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
         }
 
-         Product Grid 
+        /* Product Grid */
         .products-grid {
-            display grid;
-            grid-template-columns repeat(auto-fill, minmax(260px, 1fr));
-            gap 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1.5rem;
         }
 
         .product-card {
-            background var(--bg-secondary);
-            border 1px solid var(--border-color);
-            border-radius var(--radius-md);
-            overflow hidden;
-            display flex;
-            flex-direction column;
-            transition var(--transition);
-            position relative;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition);
+            position: relative;
         }
 
-        .product-cardhover {
-            transform translateY(-5px);
-            border-color rgba(59, 130, 246, 0.4);
-            box-shadow var(--shadow-card);
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(59, 130, 246, 0.4);
+            box-shadow: var(--shadow-card);
         }
 
         .product-image-container {
-            width 100%;
-            height 220px;
-            position relative;
-            background #151d2a;
-            overflow hidden;
+            width: 100%;
+            height: 220px;
+            position: relative;
+            background: #151d2a;
+            overflow: hidden;
         }
 
         .product-image-container img {
-            width 100%;
-            height 100%;
-            object-fit cover;
-            transition transform 0.5s ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
         }
 
-        .product-cardhover .product-image-container img {
-            transform scale(1.06);
+        .product-card:hover .product-image-container img {
+            transform: scale(1.06);
         }
 
         .category-tag {
-            position absolute;
-            top 12px;
-            left 12px;
-            background rgba(11, 15, 23, 0.8);
-            backdrop-filter blur(8px);
-            color var(--text-primary);
-            font-size 0.75rem;
-            font-weight 600;
-            padding 4px 10px;
-            border-radius 20px;
-            border 1px solid var(--border-color);
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(11, 15, 23, 0.8);
+            backdrop-filter: blur(8px);
+            color: var(--text-primary);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
         }
 
         .product-info {
-            padding 1.25rem;
-            display flex;
-            flex-direction column;
-            flex-grow 1;
-            justify-content space-between;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
         }
 
         .product-name {
-            font-size 1.05rem;
-            font-weight 600;
-            margin-bottom 0.5rem;
-            color var(--text-primary);
-            line-height 1.35;
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+            line-height: 1.35;
         }
 
         .product-desc {
-            font-size 0.85rem;
-            color var(--text-secondary);
-            margin-bottom 1rem;
-            display -webkit-box;
-            -webkit-line-clamp 2;
-            -webkit-box-orient vertical;
-            overflow hidden;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
 
         .product-footer {
-            display flex;
-            justify-content space-between;
-            align-items center;
-            margin-top auto;
-            padding-top 0.75rem;
-            border-top 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            padding-top: 0.75rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .price-wrapper {
-            display flex;
-            flex-direction column;
+            display: flex;
+            flex-direction: column;
         }
 
         .price-label {
-            font-size 0.7rem;
-            color var(--text-muted);
-            text-transform uppercase;
-            letter-spacing 0.5px;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .price-val {
-            font-size 1.3rem;
-            font-weight 800;
-            color #ffffff;
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #ffffff;
         }
 
         .btn-add-cart {
-            background rgba(59, 130, 246, 0.12);
-            color var(--accent);
-            border 1px solid rgba(59, 130, 246, 0.3);
-            padding 8px 14px;
-            border-radius var(--radius-sm);
-            font-weight 700;
-            font-size 0.85rem;
-            cursor pointer;
-            transition var(--transition);
+            background: rgba(59, 130, 246, 0.12);
+            color: var(--accent);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            padding: 8px 14px;
+            border-radius: var(--radius-sm);
+            font-weight: 700;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: var(--transition);
         }
 
-        .btn-add-carthover {
-            background var(--accent);
-            color white;
+        .btn-add-cart:hover {
+            background: var(--accent);
+            color: white;
         }
 
-         How to Buy Guide Section 
+        /* How to Buy Guide Section */
         .guide-section {
-            max-width 1280px;
-            margin 4rem auto 2rem;
-            padding 0 1.5rem;
+            max-width: 1280px;
+            margin: 4rem auto 2rem;
+            padding: 0 1.5rem;
         }
 
         .guide-card {
-            background var(--bg-secondary);
-            border 1px solid var(--border-color);
-            border-radius var(--radius-lg);
-            padding 2.5rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
         }
 
         .guide-title {
-            text-align center;
-            font-size 1.8rem;
-            font-weight 800;
-            margin-bottom 2rem;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
         }
 
         .steps-grid {
-            display grid;
-            grid-template-columns repeat(auto-fit, minmax(240px, 1fr));
-            gap 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
         }
 
         .step-item {
-            background var(--bg-primary);
-            border 1px solid var(--border-color);
-            padding 1.5rem;
-            border-radius var(--radius-md);
-            position relative;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            position: relative;
         }
 
         .step-number {
-            width 36px;
-            height 36px;
-            background var(--accent);
-            color white;
-            border-radius 50%;
-            display flex;
-            align-items center;
-            justify-content center;
-            font-weight 800;
-            font-size 1.1rem;
-            margin-bottom 1rem;
+            width: 36px;
+            height: 36px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
         }
 
         .step-h {
-            font-size 1.1rem;
-            font-weight 700;
-            margin-bottom 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
         }
 
         .step-p {
-            font-size 0.9rem;
-            color var(--text-secondary);
-            line-height 1.5;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
         }
 
-         Modals 
+        /* Modals */
         .modal-overlay {
-            display none;
-            position fixed;
-            top 0;
-            left 0;
-            width 100%;
-            height 100%;
-            background rgba(0, 0, 0, 0.75);
-            backdrop-filter blur(8px);
-            z-index 1000;
-            justify-content center;
-            align-items center;
-            padding 1rem;
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
         }
 
         .modal-container {
-            background var(--bg-secondary);
-            border 1px solid var(--border-color);
-            border-radius var(--radius-lg);
-            max-width 550px;
-            width 100%;
-            max-height 85vh;
-            display flex;
-            flex-direction column;
-            overflow hidden;
-            box-shadow 0 20px 40px rgba(0,0,0,0.6);
-            animation fadeIn 0.2s ease-out;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            max-width: 550px;
+            width: 100%;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+            animation: fadeIn 0.2s ease-out;
         }
 
         @keyframes fadeIn {
-            from { opacity 0; transform scale(0.95); }
-            to { opacity 1; transform scale(1); }
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
         }
 
         .modal-header {
-            padding 1.25rem 1.5rem;
-            border-bottom 1px solid var(--border-color);
-            display flex;
-            justify-content space-between;
-            align-items center;
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .modal-title {
-            font-size 1.25rem;
-            font-weight 700;
+            font-size: 1.25rem;
+            font-weight: 700;
         }
 
         .btn-close-modal {
-            background transparent;
-            border none;
-            color var(--text-secondary);
-            font-size 1.5rem;
-            cursor pointer;
-            line-height 1;
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            line-height: 1;
         }
 
         .modal-body {
-            padding 1.5rem;
-            overflow-y auto;
-            flex-grow 1;
+            padding: 1.5rem;
+            overflow-y: auto;
+            flex-grow: 1;
         }
 
-         Cart Items 
+        /* Cart Items */
         .cart-item {
-            display flex;
-            justify-content space-between;
-            align-items center;
-            padding 1rem 0;
-            border-bottom 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-color);
         }
 
         .cart-item-info {
-            max-width 60%;
+            max-width: 60%;
         }
 
         .cart-item-title {
-            font-weight 600;
-            font-size 0.95rem;
-            margin-bottom 4px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 4px;
         }
 
         .cart-item-price {
-            color var(--accent);
-            font-size 0.85rem;
-            font-weight 700;
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 700;
         }
 
         .cart-qty-controls {
-            display flex;
-            align-items center;
-            gap 8px;
-            background var(--bg-primary);
-            border 1px solid var(--border-color);
-            border-radius var(--radius-sm);
-            padding 4px 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            padding: 4px 8px;
         }
 
         .qty-btn {
-            background transparent;
-            border none;
-            color var(--text-primary);
-            font-weight 800;
-            cursor pointer;
-            width 20px;
-            height 20px;
-            display flex;
-            align-items center;
-            justify-content center;
+            background: transparent;
+            border: none;
+            color: var(--text-primary);
+            font-weight: 800;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .qty-val {
-            font-size 0.9rem;
-            font-weight 700;
-            min-width 20px;
-            text-align center;
+            font-size: 0.9rem;
+            font-weight: 700;
+            min-width: 20px;
+            text-align: center;
         }
 
         .modal-footer {
-            padding 1.25rem 1.5rem;
-            border-top 1px solid var(--border-color);
-            background rgba(11, 15, 23, 0.5);
+            padding: 1.25rem 1.5rem;
+            border-top: 1px solid var(--border-color);
+            background: rgba(11, 15, 23, 0.5);
         }
 
         .cart-summary {
-            display flex;
-            justify-content space-between;
-            align-items center;
-            font-size 1.2rem;
-            font-weight 800;
-            margin-bottom 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
         }
 
         .btn-whatsapp-checkout {
-            width 100%;
-            background var(--whatsapp);
-            color white;
-            border none;
-            padding 14px;
-            border-radius var(--radius-md);
-            font-weight 800;
-            font-size 1rem;
-            cursor pointer;
-            display flex;
-            align-items center;
-            justify-content center;
-            gap 10px;
-            transition var(--transition);
+            width: 100%;
+            background: var(--whatsapp);
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: var(--radius-md);
+            font-weight: 800;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: var(--transition);
         }
 
-        .btn-whatsapp-checkouthover {
-            background var(--whatsapp-hover);
+        .btn-whatsapp-checkout:hover {
+            background: var(--whatsapp-hover);
         }
 
         .empty-cart-msg {
-            text-align center;
-            padding 2rem 0;
-            color var(--text-secondary);
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-secondary);
         }
 
         footer {
-            border-top 1px solid var(--border-color);
-            margin-top 4rem;
-            padding 2rem 1.5rem;
-            text-align center;
-            color var(--text-muted);
-            font-size 0.85rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 4rem;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
         }
 
-        @media (max-width 768px) {
-            header { padding 1rem; }
-            .hero-card { flex-direction column; text-align center; padding 1.5rem; }
-            .hero-pills { justify-content center; }
-            .hero-title { font-size 1.75rem; }
+        @media (max-width: 768px) {
+            header { padding: 1rem; }
+            .hero-card { flex-direction: column; text-align: center; padding: 1.5rem; }
+            .hero-pills { justify-content: center; }
+            .hero-title { font-size: 1.75rem; }
         }
-    style
-head
-body
+    </style>
+</head>
+<body>
 
-    div class=announcement-bar
+    <div class="announcement-bar">
         🚀 US PRESALE NOW LIVE — 100% Free Shipping Options & Express Order Processing
-    div
+    </div>
 
-    header
-        div class=brand-container
-            div class=logoSANVALdiv
-            span class=badge-presalePresalespan
-        div
-        div class=nav-actions
-            button class=btn-guide onclick=openGuideModal()
+    <header>
+        <div class="brand-container">
+            <div class="logo">SANVAL</div>
+            <span class="badge-presale">Presale</span>
+        </div>
+        <div class="nav-actions">
+            <button class="btn-guide" onclick="openGuideModal()">
                 📖 How to Buy
-            button
-            button class=cart-trigger onclick=toggleCart()
+            </button>
+            <button class="cart-trigger" onclick="toggleCart()">
                 🛒 Cart
-                span class=cart-badge id=cart-count0span
-            button
-        div
-    header
+                <span class="cart-badge" id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
 
-    section class=hero
-        div class=hero-card
-            div class=hero-text
-                h1 class=hero-titleExclusive Direct Presale Online Storeh1
-                p class=hero-descSelect high-demand products across tech, apparel, home, and fitness. Lock in your order instantly via direct WhatsApp order confirmation.p
-                div class=hero-pills
-                    div class=pill⚡ Instant WhatsApp Orderdiv
-                    div class=pill🇺🇸 Trending US Productsdiv
-                    div class=pill🔒 Transparent Pricingdiv
-                div
-            div
-        div
-    section
+    <section class="hero">
+        <div class="hero-card">
+            <div class="hero-text">
+                <h1 class="hero-title">Exclusive Direct Presale Online Store</h1>
+                <p class="hero-desc">Select high-demand products across tech, apparel, home, and fitness. Lock in your order instantly via direct WhatsApp order confirmation.</p>
+                <div class="hero-pills">
+                    <div class="pill">⚡ Instant WhatsApp Order</div>
+                    <div class="pill">🇺🇸 Trending US Products</div>
+                    <div class="pill">🔒 Transparent Pricing</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    section class=categories-wrapper
-        div class=category-scroll id=category-filtersdiv
-    section
+    <section class="categories-wrapper">
+        <div class="category-scroll" id="category-filters"></div>
+    </section>
 
-    main class=main-container
-        div class=section-header
-            h2 class=section-title id=current-category-nameAll Productsh2
-            span class=product-count id=product-count0 items availablespan
-        div
-        div class=products-grid id=product-griddiv
-    main
+    <main class="main-container">
+        <div class="section-header">
+            <h2 class="section-title" id="current-category-name">All Products</h2>
+            <span class="product-count" id="product-count">0 items available</span>
+        </div>
+        <div class="products-grid" id="product-grid"></div>
+    </main>
 
-    section class=guide-section id=guide
-        div class=guide-card
-            h2 class=guide-titleHow to Order in 4 Simple Stepsh2
-            div class=steps-grid
-                div class=step-item
-                    div class=step-number1div
-                    div class=step-hBrowse & Selectdiv
-                    div class=step-pExplore our categorized catalog featuring top-selling US products and pick your items.div
-                div
-                div class=step-item
-                    div class=step-number2div
-                    div class=step-hAdd to Cartdiv
-                    div class=step-pClick Add to Cart and adjust quantities directly in your shopping bag.div
-                div
-                div class=step-item
-                    div class=step-number3div
-                    div class=step-hReview Orderdiv
-                    div class=step-pOpen your cart to check the auto-calculated total including all presale margins.div
-                div
-                div class=step-item
-                    div class=step-number4div
-                    div class=step-hConfirm via WhatsAppdiv
-                    div class=step-pClick Confirm via WhatsApp to instantly send your pre-formatted order summary directly to our team!div
-                div
-            div
-        div
-    section
+    <section class="guide-section" id="guide">
+        <div class="guide-card">
+            <h2 class="guide-title">How to Order in 4 Simple Steps</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-h">Browse & Select</div>
+                    <div class="step-p">Explore our categorized catalog featuring top-selling US products and pick your items.</div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-h">Add to Cart</div>
+                    <div class="step-p">Click "Add to Cart" and adjust quantities directly in your shopping bag.</div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-h">Review Order</div>
+                    <div class="step-p">Open your cart to check the auto-calculated total including all presale margins.</div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-h">Confirm via WhatsApp</div>
+                    <div class="step-p">Click "Confirm via WhatsApp" to instantly send your pre-formatted order summary directly to our team!</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    div class=modal-overlay id=cart-modal
-        div class=modal-container
-            div class=modal-header
-                div class=modal-titleShopping Cartdiv
-                button class=btn-close-modal onclick=toggleCart()✕button
-            div
-            div class=modal-body id=cart-items-containerdiv
-            div class=modal-footer
-                div class=cart-summary
-                    spanTotal Amountspan
-                    span id=cart-total-price$0.00span
-                div
-                button class=btn-whatsapp-checkout onclick=checkoutWhatsApp()
-                    spanConfirm Order via WhatsAppspan💬
-                button
-            div
-        div
-    div
+    <div class="modal-overlay" id="cart-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-title">Shopping Cart</div>
+                <button class="btn-close-modal" onclick="toggleCart()">✕</button>
+            </div>
+            <div class="modal-body" id="cart-items-container"></div>
+            <div class="modal-footer">
+                <div class="cart-summary">
+                    <span>Total Amount:</span>
+                    <span id="cart-total-price">$0.00</span>
+                </div>
+                <button class="btn-whatsapp-checkout" onclick="checkoutWhatsApp()">
+                    <span>Confirm Order via WhatsApp</span>💬
+                </button>
+            </div>
+        </div>
+    </div>
 
-    div class=modal-overlay id=guide-modal
-        div class=modal-container
-            div class=modal-header
-                div class=modal-titleBuying Guidediv
-                button class=btn-close-modal onclick=closeGuideModal()✕button
-            div
-            div class=modal-body
-                p style=margin-bottom 1rem; color var(--text-secondary);Welcome to strongSANVALstrong! Our ordering process is streamlined for quick presale reservationsp
-                ol style=padding-left 1.2rem; color var(--text-secondary); line-height 1.8;
-                    listrongExplore Categoriesstrong Use the top category filter bar to toggle between Apparel, Electronics, Home Goods, and Fitness.li
-                    listrongAdd Itemsstrong Click Add on any item you wish to reserve. Prices include the 10% presale fee.li
-                    listrongCheck Cartstrong View your items, adjust quantities, or remove items at any time.li
-                    listrongWhatsApp Dispatchstrong Clicking checkout redirects you directly to WhatsApp with an automatically formatted message containing your exact order breakdown.li
-                ol
-            div
-        div
-    div
+    <div class="modal-overlay" id="guide-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-title">Buying Guide</div>
+                <button class="btn-close-modal" onclick="closeGuideModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <p style="margin-bottom: 1rem; color: var(--text-secondary);">Welcome to <strong>SANVAL</strong>! Our ordering process is streamlined for quick presale reservations:</p>
+                <ol style="padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.8;">
+                    <li><strong>Explore Categories:</strong> Use the top category filter bar to toggle between Apparel, Electronics, Home Goods, and Fitness.</li>
+                    <li><strong>Add Items:</strong> Click "Add" on any item you wish to reserve. Prices include the 10% presale fee.</li>
+                    <li><strong>Check Cart:</strong> View your items, adjust quantities, or remove items at any time.</li>
+                    <li><strong>WhatsApp Dispatch:</strong> Clicking checkout redirects you directly to WhatsApp with an automatically formatted message containing your exact order breakdown.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
 
-    footer
-        p&copy; 2026 SANVAL Store. All rights reserved. Built for fast US Presales.p
-    footer
+    <footer>
+        <p>&copy; 2026 SANVAL Store. All rights reserved. Built for fast US Presales.</p>
+    </footer>
 
-    script
-        const MARGIN = 0.10;  Margen de ganancia (10%)
-        const WHATSAPP_PHONE = 15550192834;  Reemplazar con el número de WhatsApp receptor (con código de país)
+    <script>
+        const MARGIN = 0.10; // Margen de ganancia (10%)
+        const WHATSAPP_PHONE = "15550192834"; // Reemplazar con el número de WhatsApp receptor (con código de país)
 
         const rawProducts = [
-             APPAREL
-            { id 101, category Apparel - Men, name Oversized Heavyweight Cotton Tee, basePrice 20.00, desc 240 GSM premium cotton streetwear tee in vintage wash., img httpsimages.unsplash.comphoto-1521572267360-ee0c2909d518w=500 },
-            { id 102, category Apparel - Men, name Slim-Fit Fleece Jogger Pants, basePrice 28.00, desc Ultra-soft fleece joggers with zipped side pockets., img httpsimages.unsplash.comphoto-1552902865-b72c031ac5eaw=500 },
-            { id 103, category Apparel - Women, name High-Waisted Seamless Leggings, basePrice 24.00, desc Squat-proof 4-way stretch activewear leggings., img httpsimages.unsplash.comphoto-1506629082955-511b1aa562c8w=500 },
-            { id 104, category Apparel - Women, name Cropped Ribbed Tank Top, basePrice 15.00, desc Breathable ribbed knit tank top, casual everyday wear., img httpsimages.unsplash.comphoto-1503342217505-b0a15ec3261cw=500 },
-            { id 105, category Apparel - Outerwear, name Water-Resistant Windbreaker Jacket, basePrice 42.00, desc Lightweight hooded jacket with elastic cuffs and rain protection., img httpsimages.unsplash.comphoto-1544441893-675973e31985w=500 },
-            { id 106, category Apparel - Accessories, name Structured Unisex Baseball Cap, basePrice 14.00, desc Classic 6-panel adjustable cotton twill cap., img httpsimages.unsplash.comphoto-1588850561407-ed78c282e89bw=500 },
+            // APPAREL
+            { id: 101, category: "Apparel - Men", name: "Oversized Heavyweight Cotton Tee", basePrice: 20.00, desc: "240 GSM premium cotton streetwear tee in vintage wash.", img: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500" },
+            { id: 102, category: "Apparel - Men", name: "Slim-Fit Fleece Jogger Pants", basePrice: 28.00, desc: "Ultra-soft fleece joggers with zipped side pockets.", img: "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?w=500" },
+            { id: 103, category: "Apparel - Women", name: "High-Waisted Seamless Leggings", basePrice: 24.00, desc: "Squat-proof 4-way stretch activewear leggings.", img: "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=500" },
+            { id: 104, category: "Apparel - Women", name: "Cropped Ribbed Tank Top", basePrice: 15.00, desc: "Breathable ribbed knit tank top, casual everyday wear.", img: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500" },
+            { id: 105, category: "Apparel - Outerwear", name: "Water-Resistant Windbreaker Jacket", basePrice: 42.00, desc: "Lightweight hooded jacket with elastic cuffs and rain protection.", img: "https://images.unsplash.com/photo-1544441893-675973e31985?w=500" },
+            { id: 106, category: "Apparel - Accessories", name: "Structured Unisex Baseball Cap", basePrice: 14.00, desc: "Classic 6-panel adjustable cotton twill cap.", img: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=500" },
 
-             ELECTRONICS
-            { id 201, category Electronics - Audio, name ANC True Wireless Earbuds, basePrice 35.00, desc Active noise canceling earbuds with 30-hour charging case., img httpsimages.unsplash.comphoto-1590658268037-6bf12165a8dfw=500 },
-            { id 202, category Electronics - Audio, name Portable Waterproof Bluetooth Speaker, basePrice 30.00, desc IPX7 waterproof rated speaker with deep bass output., img httpsimages.unsplash.comphoto-1608043152269-423dbba4e7e1w=500 },
-            { id 203, category Electronics - Wearables, name Fitness Tracker Smartwatch, basePrice 45.00, desc Heart rate monitor, step counter, sleep tracking, and OLED display., img httpsimages.unsplash.comphoto-1579586337278-3befd40fd17aw=500 },
-            { id 204, category Electronics - Chargers, name 3-in-1 Magnetic Wireless Charging Station, basePrice 28.00, desc Fast wireless charging dock for phone, smartwatch, and earbuds., img httpsimages.unsplash.comphoto-1622445268121-8a1d708176b1w=500 },
-            { id 205, category Electronics - Chargers, name 20,000mAh Power Bank PD Fast Charge, basePrice 25.00, desc High-capacity dual USB-C external battery pack., img httpsimages.unsplash.comphoto-1609592424109-dd9892f1b177w=500 },
-            { id 206, category Electronics - Setup, name RGB Mechanical Gaming Keyboard, basePrice 40.00, desc Tactile blue switches with customizable backlight modes., img httpsimages.unsplash.comphoto-1587829741301-dc798b83add3w=500 },
+            // ELECTRONICS
+            { id: 201, category: "Electronics - Audio", name: "ANC True Wireless Earbuds", basePrice: 35.00, desc: "Active noise canceling earbuds with 30-hour charging case.", img: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500" },
+            { id: 202, category: "Electronics - Audio", name: "Portable Waterproof Bluetooth Speaker", basePrice: 30.00, desc: "IPX7 waterproof rated speaker with deep bass output.", img: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500" },
+            { id: 203, category: "Electronics - Wearables", name: "Fitness Tracker Smartwatch", basePrice: 45.00, desc: "Heart rate monitor, step counter, sleep tracking, and OLED display.", img: "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=500" },
+            { id: 204, category: "Electronics - Chargers", name: "3-in-1 Magnetic Wireless Charging Station", basePrice: 28.00, desc: "Fast wireless charging dock for phone, smartwatch, and earbuds.", img: "https://images.unsplash.com/photo-1622445268121-8a1d708176b1?w=500" },
+            { id: 205, category: "Electronics - Chargers", name: "20,000mAh Power Bank PD Fast Charge", basePrice: 25.00, desc: "High-capacity dual USB-C external battery pack.", img: "https://images.unsplash.com/photo-1609592424109-dd9892f1b177?w=500" },
+            { id: 206, category: "Electronics - Setup", name: "RGB Mechanical Gaming Keyboard", basePrice: 40.00, desc: "Tactile blue switches with customizable backlight modes.", img: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500" },
 
-             HOME & LIVING
-            { id 301, category Home & Living, name 32oz Insulated Stainless Steel Tumbler, basePrice 18.00, desc Keeps drinks icy cold for 24 hours or hot for 12 hours., img httpsimages.unsplash.comphoto-1602143407151-7111542de6e8w=500 },
-            { id 302, category Home & Living, name Essential Oil Ultrasonic Diffuser, basePrice 22.00, desc 300ml LED ambient light aromatherapy diffuser., img httpsimages.unsplash.comphoto-1608571423902-eed4a5ad8108w=500 },
-            { id 303, category Home & Living, name Ergonomic Memory Foam Contour Pillow, basePrice 32.00, desc Orthopedic neck support pillow for side and back sleepers., img httpsimages.unsplash.comphoto-1584100936595-c0654b55a2e2w=500 },
-            { id 304, category Home & Living, name Dimmable Touch Control Desk Lamp, basePrice 26.00, desc Eye-caring LED lamp with built-in USB charging port., img httpsimages.unsplash.comphoto-1534073828943-f801091bb18cw=500 },
+            // HOME & LIVING
+            { id: 301, category: "Home & Living", name: "32oz Insulated Stainless Steel Tumbler", basePrice: 18.00, desc: "Keeps drinks icy cold for 24 hours or hot for 12 hours.", img: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500" },
+            { id: 302, category: "Home & Living", name: "Essential Oil Ultrasonic Diffuser", basePrice: 22.00, desc: "300ml LED ambient light aromatherapy diffuser.", img: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=500" },
+            { id: 303, category: "Home & Living", name: "Ergonomic Memory Foam Contour Pillow", basePrice: 32.00, desc: "Orthopedic neck support pillow for side and back sleepers.", img: "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=500" },
+            { id: 304, category: "Home & Living", name: "Dimmable Touch Control Desk Lamp", basePrice: 26.00, desc: "Eye-caring LED lamp with built-in USB charging port.", img: "https://images.unsplash.com/photo-1534073828943-f801091bb18c?w=500" },
 
-             FITNESS & OUTDOORS
-            { id 401, category Fitness & Outdoors, name Heavy Duty Resistance Band Set, basePrice 16.00, desc Set of 5 stackable exercise bands with handles and door anchor., img httpsimages.unsplash.comphoto-1598289431512-b97b0917affcw=500 },
-            { id 402, category Fitness & Outdoors, name Non-Slip Eco-Friendly Yoga Mat, basePrice 25.00, desc 6mm thick TPE cushioning mat with alignment markings., img httpsimages.unsplash.comphoto-1601925260368-ae2f83cf8b7fw=500 },
-            { id 403, category Fitness & Outdoors, name Deep Tissue Percussion Massage Gun, basePrice 48.00, desc Quiet handheld muscle recovery massager with 6 heads., img httpsimages.unsplash.comphoto-1518611012118-696072aa579aw=500 }
+            // FITNESS & OUTDOORS
+            { id: 401, category: "Fitness & Outdoors", name: "Heavy Duty Resistance Band Set", basePrice: 16.00, desc: "Set of 5 stackable exercise bands with handles and door anchor.", img: "https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=500" },
+            { id: 402, category: "Fitness & Outdoors", name: "Non-Slip Eco-Friendly Yoga Mat", basePrice: 25.00, desc: "6mm thick TPE cushioning mat with alignment markings.", img: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=500" },
+            { id: 403, category: "Fitness & Outdoors", name: "Deep Tissue Percussion Massage Gun", basePrice: 48.00, desc: "Quiet handheld muscle recovery massager with 6 heads.", img: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500" }
         ];
 
-        const products = rawProducts.map(p = ({
+        const products = rawProducts.map(p => ({
             ...p,
-            price Number((p.basePrice  (1 + MARGIN)).toFixed(2))
+            price: Number((p.basePrice * (1 + MARGIN)).toFixed(2))
         }));
 
         let cart = [];
-        let activeCategory = All;
+        let activeCategory = "All";
 
-        const categories = [All, ...new Set(products.map(p = p.category))];
+        const categories = ["All", ...new Set(products.map(p => p.category))];
 
         function renderCategories() {
             const container = document.getElementById('category-filters');
-            container.innerHTML = categories.map(cat = `
-                button class=category-btn ${cat === activeCategory  'active'  ''} onclick=setCategory('${cat}')
+            container.innerHTML = categories.map(cat => `
+                <button class="category-btn ${cat === activeCategory ? 'active' : ''}" onclick="setCategory('${cat}')">
                     ${cat}
-                button
+                </button>
             `).join('');
         }
 
@@ -834,93 +834,93 @@ body
 
         function renderProducts() {
             const grid = document.getElementById('product-grid');
-            const filtered = activeCategory === All 
-                 products 
-                 products.filter(p = p.category === activeCategory);
+            const filtered = activeCategory === "All" 
+                ? products 
+                : products.filter(p => p.category === activeCategory);
 
-            document.getElementById('current-category-name').innerText = activeCategory === All  All Products  activeCategory;
+            document.getElementById('current-category-name').innerText = activeCategory === "All" ? "All Products" : activeCategory;
             document.getElementById('product-count').innerText = `${filtered.length} items available`;
 
-            grid.innerHTML = filtered.map(p = `
-                div class=product-card
-                    div class=product-image-container
-                        img src=${p.img} alt=${p.name} loading=lazy
-                        span class=category-tag${p.category}span
-                    div
-                    div class=product-info
-                        div
-                            h3 class=product-name${p.name}h3
-                            p class=product-desc${p.desc}p
-                        div
-                        div class=product-footer
-                            div class=price-wrapper
-                                span class=price-labelPresale Pricespan
-                                span class=price-val$${p.price.toFixed(2)}span
-                            div
-                            button class=btn-add-cart onclick=addToCart(${p.id})
+            grid.innerHTML = filtered.map(p => `
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="${p.img}" alt="${p.name}" loading="lazy">
+                        <span class="category-tag">${p.category}</span>
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">${p.name}</h3>
+                            <p class="product-desc">${p.desc}</p>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price-wrapper">
+                                <span class="price-label">Presale Price</span>
+                                <span class="price-val">$${p.price.toFixed(2)}</span>
+                            </div>
+                            <button class="btn-add-cart" onclick="addToCart(${p.id})">
                                 + Add
-                            button
-                        div
-                    div
-                div
+                            </button>
+                        </div>
+                    </div>
+                </div>
             `).join('');
         }
 
         function addToCart(id) {
-            const product = products.find(p = p.id === id);
-            const existing = cart.find(item = item.id === id);
+            const product = products.find(p => p.id === id);
+            const existing = cart.find(item => item.id === id);
 
             if (existing) {
                 existing.qty++;
             } else {
-                cart.push({ ...product, qty 1 });
+                cart.push({ ...product, qty: 1 });
             }
             updateCartUI();
         }
 
         function updateQty(id, delta) {
-            const item = cart.find(i = i.id === id);
+            const item = cart.find(i => i.id === id);
             if (!item) return;
 
             item.qty += delta;
-            if (item.qty = 0) {
-                cart = cart.filter(i = i.id !== id);
+            if (item.qty <= 0) {
+                cart = cart.filter(i => i.id !== id);
             }
             updateCartUI();
         }
 
         function updateCartUI() {
-            const count = cart.reduce((sum, item) = sum + item.qty, 0);
+            const count = cart.reduce((sum, item) => sum + item.qty, 0);
             document.getElementById('cart-count').innerText = count;
 
             const container = document.getElementById('cart-items-container');
             
             if (cart.length === 0) {
-                container.innerHTML = 'div class=empty-cart-msgpYour cart is currently empty.pdiv';
+                container.innerHTML = '<div class="empty-cart-msg"><p>Your cart is currently empty.</p></div>';
             } else {
-                container.innerHTML = cart.map(item = `
-                    div class=cart-item
-                        div class=cart-item-info
-                            div class=cart-item-title${item.name}div
-                            div class=cart-item-price$${item.price.toFixed(2)} eachdiv
-                        div
-                        div class=cart-qty-controls
-                            button class=qty-btn onclick=updateQty(${item.id}, -1)-button
-                            span class=qty-val${item.qty}span
-                            button class=qty-btn onclick=updateQty(${item.id}, 1)+button
-                        div
-                    div
+                container.innerHTML = cart.map(item => `
+                    <div class="cart-item">
+                        <div class="cart-item-info">
+                            <div class="cart-item-title">${item.name}</div>
+                            <div class="cart-item-price">$${item.price.toFixed(2)} each</div>
+                        </div>
+                        <div class="cart-qty-controls">
+                            <button class="qty-btn" onclick="updateQty(${item.id}, -1)">-</button>
+                            <span class="qty-val">${item.qty}</span>
+                            <button class="qty-btn" onclick="updateQty(${item.id}, 1)">+</button>
+                        </div>
+                    </div>
                 `).join('');
             }
 
-            const total = cart.reduce((sum, item) = sum + (item.price  item.qty), 0);
+            const total = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
             document.getElementById('cart-total-price').innerText = `$${total.toFixed(2)}`;
         }
 
         function toggleCart() {
             const modal = document.getElementById('cart-modal');
             const isVisible = modal.style.display === 'flex';
-            modal.style.display = isVisible  'none'  'flex';
+            modal.style.display = isVisible ? 'none' : 'flex';
         }
 
         function openGuideModal() {
@@ -933,33 +933,33 @@ body
 
         function checkoutWhatsApp() {
             if (cart.length === 0) {
-                alert(Please add items to your cart before proceeding.);
+                alert("Please add items to your cart before proceeding.");
                 return;
             }
 
-            let message = 🛍️ NEW PRESALE ORDER - SANVAL STOREn;
-            message += --------------------------------------n;
+            let message = "🛍️ *NEW PRESALE ORDER - SANVAL STORE*\n";
+            message += "--------------------------------------\n";
 
             let total = 0;
-            cart.forEach((item, index) = {
-                const subtotal = item.price  item.qty;
+            cart.forEach((item, index) => {
+                const subtotal = item.price * item.qty;
                 total += subtotal;
-                message += `${index + 1}. ${item.name}n`;
-                message += `   • Qty ${item.qty} x $${item.price.toFixed(2)}n`;
-                message += `   • Subtotal $${subtotal.toFixed(2)}nn`;
+                message += `${index + 1}. *${item.name}*\n`;
+                message += `   • Qty: ${item.qty} x $${item.price.toFixed(2)}\n`;
+                message += `   • Subtotal: $${subtotal.toFixed(2)}\n\n`;
             });
 
-            message += --------------------------------------n;
-            message += `💰 TOTAL PRESALE AMOUNT $${total.toFixed(2)} USDnn`;
-            message += Please provide delivery and payment details to complete my reservation.;
+            message += "--------------------------------------\n";
+            message += `💰 *TOTAL PRESALE AMOUNT: $${total.toFixed(2)} USD*\n\n`;
+            message += "Please provide delivery and payment details to complete my reservation.";
 
             const encodedMessage = encodeURIComponent(message);
-            window.open(`httpswa.me${WHATSAPP_PHONE}text=${encodedMessage}`, '_blank');
+            window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${encodedMessage}`, '_blank');
         }
 
         renderCategories();
         renderProducts();
         updateCartUI();
-    script
-body
-html
+    </script>
+</body>
+</html>
