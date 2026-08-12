@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SANVAL | Preventa Exclusiva EE. UU.</title>
+    <title>SANVAL | Tienda Oficial Preventa EE. UU.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -18,10 +18,10 @@
             --accent-glow: rgba(59, 130, 246, 0.35);
             --whatsapp: #25d366;
             --whatsapp-hover: #1da851;
+            --amazon-orange: #ff9900;
             --text-primary: #f9fafb;
             --text-secondary: #9ca3af;
             --text-muted: #6b7280;
-            --tag-bg: rgba(59, 130, 246, 0.12);
             --radius-lg: 16px;
             --radius-md: 12px;
             --radius-sm: 8px;
@@ -29,20 +29,8 @@
             --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        body {
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.5;
-            padding-bottom: 60px;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; -webkit-font-smoothing: antialiased; }
+        body { background-color: var(--bg-primary); color: var(--text-primary); line-height: 1.5; padding-bottom: 60px; }
 
         .announcement-bar {
             background: linear-gradient(90deg, #1e3a8a, #3b82f6);
@@ -68,590 +56,100 @@
             align-items: center;
         }
 
-        .brand-container {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .logo {
-            font-size: 1.6rem;
-            font-weight: 800;
-            letter-spacing: 2.5px;
-            background: linear-gradient(135deg, #ffffff 30%, #3b82f6 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .badge-presale {
-            background: rgba(239, 68, 68, 0.2);
-            color: #ef4444;
-            border: 1px solid rgba(239, 68, 68, 0.3);
-            font-size: 0.7rem;
-            font-weight: 700;
-            padding: 3px 8px;
-            border-radius: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .nav-actions {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .btn-guide {
-            background: transparent;
-            border: 1px solid var(--border-color);
-            color: var(--text-primary);
-            padding: 8px 16px;
-            border-radius: var(--radius-sm);
-            font-size: 0.9rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: var(--transition);
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .btn-guide:hover {
-            border-color: var(--accent);
-            color: var(--accent);
-        }
-
-        .cart-trigger {
-            background: var(--accent);
-            color: white;
-            border: none;
-            padding: 8px 18px;
-            border-radius: 30px;
-            font-weight: 700;
-            font-size: 0.9rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: var(--transition);
-            box-shadow: 0 4px 15px var(--accent-glow);
-        }
-
-        .cart-trigger:hover {
-            background: var(--accent-hover);
-            transform: translateY(-1px);
-        }
-
-        .cart-badge {
-            background: white;
-            color: var(--bg-primary);
-            border-radius: 50%;
-            width: 22px;
-            height: 22px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.8rem;
-            font-weight: 800;
-        }
-
-        .hero {
-            max-width: 1280px;
-            margin: 2rem auto 1rem;
-            padding: 0 1.5rem;
-        }
-
-        .hero-card {
-            background: linear-gradient(135deg, rgba(31, 41, 55, 0.9), rgba(17, 24, 39, 0.95));
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            padding: 2.5rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 2rem;
-            box-shadow: var(--shadow-card);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-card::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-            z-index: 0;
-            pointer-events: none;
-        }
-
-        .hero-text {
-            max-width: 650px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-title {
-            font-size: 2.2rem;
-            font-weight: 800;
-            margin-bottom: 0.75rem;
-            line-height: 1.2;
-        }
-
-        .hero-desc {
-            color: var(--text-secondary);
-            font-size: 1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .hero-pills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .pill {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--border-color);
-            color: var(--text-secondary);
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .categories-wrapper {
-            max-width: 1280px;
-            margin: 1.5rem auto;
-            padding: 0 1.5rem;
-        }
-
-        .category-scroll {
-            display: flex;
-            gap: 10px;
-            overflow-x: auto;
-            padding-bottom: 10px;
-            scrollbar-width: thin;
-            scrollbar-color: var(--bg-card) transparent;
-        }
-
-        .category-btn {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            color: var(--text-secondary);
-            padding: 10px 20px;
-            border-radius: 30px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            white-space: nowrap;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .category-btn:hover {
-            border-color: var(--accent);
-            color: var(--text-primary);
-        }
-
-        .category-btn.active {
-            background: var(--accent);
-            color: white;
-            border-color: var(--accent);
-            box-shadow: 0 4px 12px var(--accent-glow);
-        }
-
-        .main-container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        .section-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-        }
-
-        .section-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-        }
-
-        .product-count {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .product-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-md);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            transition: var(--transition);
-            position: relative;
-        }
-
-        .product-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(59, 130, 246, 0.4);
-            box-shadow: var(--shadow-card);
-        }
-
-        .product-image-container {
-            width: 100%;
-            height: 220px;
-            position: relative;
-            background: #151d2a;
-            overflow: hidden;
-        }
-
-        .product-image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .product-card:hover .product-image-container img {
-            transform: scale(1.06);
-        }
-
-        .category-tag {
-            position: absolute;
-            top: 12px;
-            left: 12px;
-            background: rgba(11, 15, 23, 0.8);
-            backdrop-filter: blur(8px);
-            color: var(--text-primary);
-            font-size: 0.75rem;
-            font-weight: 600;
-            padding: 4px 10px;
-            border-radius: 20px;
-            border: 1px solid var(--border-color);
-        }
-
-        .product-info {
-            padding: 1.25rem;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            justify-content: space-between;
-        }
-
-        .product-name {
-            font-size: 1.05rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: var(--text-primary);
-            line-height: 1.35;
-        }
-
-        .product-desc {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .product-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: auto;
-            padding-top: 0.75rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .price-wrapper {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .price-label {
-            font-size: 0.7rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .price-val {
-            font-size: 1.3rem;
-            font-weight: 800;
-            color: #ffffff;
-        }
-
-        .btn-add-cart {
-            background: rgba(59, 130, 246, 0.12);
-            color: var(--accent);
-            border: 1px solid rgba(59, 130, 246, 0.3);
-            padding: 8px 14px;
-            border-radius: var(--radius-sm);
-            font-weight: 700;
-            font-size: 0.85rem;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .btn-add-cart:hover {
-            background: var(--accent);
-            color: white;
-        }
-
-        .guide-section {
-            max-width: 1280px;
-            margin: 4rem auto 2rem;
-            padding: 0 1.5rem;
-        }
-
-        .guide-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            padding: 2.5rem;
-        }
-
-        .guide-title {
-            text-align: center;
-            font-size: 1.8rem;
-            font-weight: 800;
-            margin-bottom: 2rem;
-        }
-
-        .steps-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .step-item {
-            background: var(--bg-primary);
-            border: 1px solid var(--border-color);
-            padding: 1.5rem;
-            border-radius: var(--radius-md);
-            position: relative;
-        }
-
-        .step-number {
-            width: 36px;
-            height: 36px;
-            background: var(--accent);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 800;
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-        }
-
-        .step-h {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .step-p {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            line-height: 1.5;
-        }
-
-        .modal-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.75);
-            backdrop-filter: blur(8px);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem;
-        }
-
-        .modal-container {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            max-width: 550px;
-            width: 100%;
-            max-height: 85vh;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-            animation: fadeIn 0.2s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: scale(0.95); }
-            to { opacity: 1; transform: scale(1); }
-        }
-
-        .modal-header {
-            padding: 1.25rem 1.5rem;
-            border-bottom: 1px solid var(--border-color);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .modal-title {
-            font-size: 1.25rem;
-            font-weight: 700;
-        }
-
-        .btn-close-modal {
-            background: transparent;
-            border: none;
-            color: var(--text-secondary);
-            font-size: 1.5rem;
-            cursor: pointer;
-            line-height: 1;
-        }
-
-        .modal-body {
-            padding: 1.5rem;
-            overflow-y: auto;
-            flex-grow: 1;
-        }
-
-        .cart-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .cart-item-info {
-            max-width: 60%;
-        }
-
-        .cart-item-title {
-            font-weight: 600;
-            font-size: 0.95rem;
-            margin-bottom: 4px;
-        }
-
-        .cart-item-price {
-            color: var(--accent);
-            font-size: 0.85rem;
-            font-weight: 700;
-        }
-
-        .cart-qty-controls {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--bg-primary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-sm);
-            padding: 4px 8px;
-        }
-
-        .qty-btn {
-            background: transparent;
-            border: none;
-            color: var(--text-primary);
-            font-weight: 800;
-            cursor: pointer;
-            width: 20px;
-            height: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .qty-val {
-            font-size: 0.9rem;
-            font-weight: 700;
-            min-width: 20px;
-            text-align: center;
-        }
-
-        .modal-footer {
-            padding: 1.25rem 1.5rem;
-            border-top: 1px solid var(--border-color);
-            background: rgba(11, 15, 23, 0.5);
-        }
-
-        .cart-summary {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 1.2rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-        }
-
-        .btn-whatsapp-checkout {
-            width: 100%;
-            background: var(--whatsapp);
-            color: white;
-            border: none;
-            padding: 14px;
-            border-radius: var(--radius-md);
-            font-weight: 800;
-            font-size: 1rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            transition: var(--transition);
-        }
-
-        .btn-whatsapp-checkout:hover {
-            background: var(--whatsapp-hover);
-        }
-
-        .empty-cart-msg {
-            text-align: center;
-            padding: 2rem 0;
-            color: var(--text-secondary);
-        }
-
-        footer {
-            border-top: 1px solid var(--border-color);
-            margin-top: 4rem;
-            padding: 2rem 1.5rem;
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-
-        @media (max-width: 768px) {
-            header { padding: 1rem; }
-            .hero-card { flex-direction: column; text-align: center; padding: 1.5rem; }
-            .hero-pills { justify-content: center; }
-            .hero-title { font-size: 1.75rem; }
-        }
+        .brand-container { display: flex; align-items: center; gap: 12px; }
+        .logo { font-size: 1.6rem; font-weight: 800; letter-spacing: 2.5px; background: linear-gradient(135deg, #ffffff 30%, #3b82f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .badge-presale { background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.3); font-size: 0.7rem; font-weight: 700; padding: 3px 8px; border-radius: 20px; text-transform: uppercase; letter-spacing: 1px; }
+
+        .nav-actions { display: flex; align-items: center; gap: 1rem; }
+        .btn-guide { background: transparent; border: 1px solid var(--border-color); color: var(--text-primary); padding: 8px 16px; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: var(--transition); display: flex; align-items: center; gap: 6px; }
+        .btn-guide:hover { border-color: var(--accent); color: var(--accent); }
+
+        .cart-trigger { background: var(--accent); color: white; border: none; padding: 8px 18px; border-radius: 30px; font-weight: 700; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: var(--transition); box-shadow: 0 4px 15px var(--accent-glow); }
+        .cart-trigger:hover { background: var(--accent-hover); transform: translateY(-1px); }
+        .cart-badge { background: white; color: var(--bg-primary); border-radius: 50%; width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 800; }
+
+        .hero { max-width: 1280px; margin: 2rem auto 1rem; padding: 0 1.5rem; }
+        .hero-card { background: linear-gradient(135deg, rgba(31, 41, 55, 0.9), rgba(17, 24, 39, 0.95)); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2.5rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; box-shadow: var(--shadow-card); position: relative; overflow: hidden; }
+        .hero-card::after { content: ''; position: absolute; top: -50%; right: -20%; width: 400px; height: 400px; background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%); z-index: 0; pointer-events: none; }
+        .hero-text { max-width: 650px; position: relative; z-index: 1; }
+        .hero-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.75rem; line-height: 1.2; }
+        .hero-desc { color: var(--text-secondary); font-size: 1rem; margin-bottom: 1.5rem; }
+        .hero-pills { display: flex; flex-wrap: wrap; gap: 10px; }
+        .pill { background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-color); color: var(--text-secondary); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; display: flex; align-items: center; gap: 6px; }
+
+        .categories-wrapper { max-width: 1280px; margin: 1.5rem auto; padding: 0 1.5rem; }
+        .category-scroll { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 10px; scrollbar-width: thin; scrollbar-color: var(--bg-card) transparent; }
+        .category-btn { background: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-secondary); padding: 10px 20px; border-radius: 30px; font-size: 0.9rem; font-weight: 600; white-space: nowrap; cursor: pointer; transition: var(--transition); }
+        .category-btn:hover { border-color: var(--accent); color: var(--text-primary); }
+        .category-btn.active { background: var(--accent); color: white; border-color: var(--accent); box-shadow: 0 4px 12px var(--accent-glow); }
+
+        .main-container { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
+        .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+        .section-title { font-size: 1.4rem; font-weight: 700; }
+        .product-count { color: var(--text-muted); font-size: 0.9rem; }
+
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1.5rem; }
+        .product-card { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-md); overflow: hidden; display: flex; flex-direction: column; transition: var(--transition); position: relative; }
+        .product-card:hover { transform: translateY(-5px); border-color: rgba(59, 130, 246, 0.4); box-shadow: var(--shadow-card); }
+
+        .product-image-container { width: 100%; height: 220px; position: relative; background: #151d2a; overflow: hidden; }
+        .product-image-container img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .product-card:hover .product-image-container img { transform: scale(1.06); }
+
+        .category-tag { position: absolute; top: 12px; left: 12px; background: rgba(11, 15, 23, 0.85); backdrop-filter: blur(8px); color: var(--text-primary); font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 20px; border: 1px solid var(--border-color); }
+        .product-info { padding: 1.25rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
+        .product-name { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--text-primary); line-height: 1.35; }
+        .product-desc { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+        .official-link { display: inline-flex; align-items: center; gap: 4px; font-size: 0.75rem; color: var(--amazon-orange); text-decoration: none; font-weight: 600; margin-bottom: 1rem; width: fit-content; }
+        .official-link:hover { text-decoration: underline; }
+
+        .product-footer { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 0.75rem; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+        .price-wrapper { display: flex; flex-direction: column; }
+        .price-label { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+        .price-val { font-size: 1.25rem; font-weight: 800; color: #ffffff; }
+
+        .btn-add-cart { background: rgba(59, 130, 246, 0.12); color: var(--accent); border: 1px solid rgba(59, 130, 246, 0.3); padding: 8px 14px; border-radius: var(--radius-sm); font-weight: 700; font-size: 0.85rem; cursor: pointer; transition: var(--transition); }
+        .btn-add-cart:hover { background: var(--accent); color: white; }
+
+        .guide-section { max-width: 1280px; margin: 4rem auto 2rem; padding: 0 1.5rem; }
+        .guide-card { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2.5rem; }
+        .guide-title { text-align: center; font-size: 1.8rem; font-weight: 800; margin-bottom: 2rem; }
+        .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+        .step-item { background: var(--bg-primary); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: var(--radius-md); }
+        .step-number { width: 36px; height: 36px; background: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.1rem; margin-bottom: 1rem; }
+        .step-h { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .step-p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; }
+
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(8px); z-index: 1000; justify-content: center; align-items: center; padding: 1rem; }
+        .modal-container { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-lg); max-width: 550px; width: 100%; max-height: 85vh; display: flex; flex-direction: column; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.6); animation: fadeIn 0.2s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+
+        .modal-header { padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; }
+        .modal-title { font-size: 1.25rem; font-weight: 700; }
+        .btn-close-modal { background: transparent; border: none; color: var(--text-secondary); font-size: 1.5rem; cursor: pointer; }
+        .modal-body { padding: 1.5rem; overflow-y: auto; flex-grow: 1; }
+
+        .cart-item { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid var(--border-color); }
+        .cart-item-title { font-weight: 600; font-size: 0.95rem; margin-bottom: 4px; }
+        .cart-item-price { color: var(--accent); font-size: 0.85rem; font-weight: 700; }
+        .cart-qty-controls { display: flex; align-items: center; gap: 8px; background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 4px 8px; }
+        .qty-btn { background: transparent; border: none; color: var(--text-primary); font-weight: 800; cursor: pointer; width: 20px; height: 20px; }
+        .qty-val { font-size: 0.9rem; font-weight: 700; min-width: 20px; text-align: center; }
+
+        .modal-footer { padding: 1.25rem 1.5rem; border-top: 1px solid var(--border-color); background: rgba(11, 15, 23, 0.5); }
+        .cart-summary { display: flex; justify-content: space-between; align-items: center; font-size: 1.2rem; font-weight: 800; margin-bottom: 1rem; }
+        .btn-whatsapp-checkout { width: 100%; background: var(--whatsapp); color: white; border: none; padding: 14px; border-radius: var(--radius-md); font-weight: 800; font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; transition: var(--transition); }
+        .btn-whatsapp-checkout:hover { background: var(--whatsapp-hover); }
+        .empty-cart-msg { text-align: center; padding: 2rem 0; color: var(--text-secondary); }
+
+        footer { border-top: 1px solid var(--border-color); margin-top: 4rem; padding: 2rem 1.5rem; text-align: center; color: var(--text-muted); font-size: 0.85rem; }
     </style>
 </head>
 <body>
 
     <div class="announcement-bar">
-        ✈️ PREVENTA EE. UU. ABIERTA — Viajamos en 30 días | Encargá tu pedido con reserva anticipada
+        ✈️ PREVENTA OFICIAL EE. UU. — Próximo viaje en 30 días | Productos 100% Originales con Garantía
     </div>
 
     <header>
@@ -660,12 +158,9 @@
             <span class="badge-presale">Preventa</span>
         </div>
         <div class="nav-actions">
-            <button class="btn-guide" onclick="openGuideModal()">
-                📖 Cómo Comprar
-            </button>
+            <button class="btn-guide" onclick="openGuideModal()">📖 Cómo Comprar</button>
             <button class="cart-trigger" onclick="toggleCart()">
-                🛒 Carrito
-                <span class="cart-badge" id="cart-count">0</span>
+                🛒 Carrito <span class="cart-badge" id="cart-count">0</span>
             </button>
         </div>
     </header>
@@ -673,12 +168,12 @@
     <section class="hero">
         <div class="hero-card">
             <div class="hero-text">
-                <h1 class="hero-title">Catálogo Exclusivo de Importación directa</h1>
-                <p class="hero-desc">Elegí productos seleccionados de EE. UU. (ropa, tecnología, accesorios y hogar). Asegurá tu pedido antes del viaje con confirmación directa por WhatsApp.</p>
+                <h1 class="hero-title">Productos Oficiales de EE. UU. por Encargo</h1>
+                <p class="hero-desc">Reservá iPhones, termos Stanley, Apple MacBooks, ropa de marca y accesorios directo de las tiendas oficiales de Estados Unidos antes de nuestro viaje.</p>
                 <div class="hero-pills">
-                    <div class="pill">📲 Pedidos directo por WhatsApp</div>
-                    <div class="pill">🇺🇸 Productos Top de EE. UU.</div>
-                    <div class="pill">🔒 Precios finales con margen incluido</div>
+                    <div class="pill">📲 Confirmación inmediata por WhatsApp</div>
+                    <div class="pill">🔗 Enlaces directos a Apple / Stanley / Amazon</div>
+                    <div class="pill">✈️ Entrega garantizada al regresar</div>
                 </div>
             </div>
         </div>
@@ -691,34 +186,34 @@
     <main class="main-container">
         <div class="section-header">
             <h2 class="section-title" id="current-category-name">Todos los Productos</h2>
-            <span class="product-count" id="product-count">0 artículos disponibles</span>
+            <span class="product-count" id="product-count">0 artículos</span>
         </div>
         <div class="products-grid" id="product-grid"></div>
     </main>
 
-    <section class="guide-section" id="guide">
+    <section class="guide-section">
         <div class="guide-card">
-            <h2 class="guide-title">¿Cómo comprar en 4 pasos simples?</h2>
+            <h2 class="guide-title">¿Cómo reservar tu pedido en 4 pasos?</h2>
             <div class="steps-grid">
                 <div class="step-item">
                     <div class="step-number">1</div>
                     <div class="step-h">Elegí tus productos</div>
-                    <div class="step-p">Navegá por las categorías desglosadas (Ropa, Electrónica, Hogar, Fitness) y elegí lo que quieras encargar.</div>
+                    <div class="step-p">Navegá por las distintas categorías (iPhones, Stanley, Apple, Ropa, etc.) y compará con las tiendas oficiales si querés.</div>
                 </div>
                 <div class="step-item">
                     <div class="step-number">2</div>
-                    <div class="step-h">Añadí al Carrito</div>
-                    <div class="step-p">Hacé clic en "+ Agregar" para sumar los artículos y ajustar las cantidades que necesites.</div>
+                    <div class="step-h">Agregá al Carrito</div>
+                    <div class="step-p">Hacé clic en "+ Agregar" en los productos que quieras encargar para este viaje.</div>
                 </div>
                 <div class="step-item">
                     <div class="step-number">3</div>
-                    <div class="step-h">Revisá el Total</div>
-                    <div class="step-p">Abrí el carrito para verificar los precios (ya tienen el 10% de ganancia/gestión calculado automáticamente).</div>
+                    <div class="step-h">Revisá tu Orden</div>
+                    <div class="step-p">Abrí el carrito para verificar la lista de artículos, ajustar cantidades y ver el monto final total.</div>
                 </div>
                 <div class="step-item">
                     <div class="step-number">4</div>
-                    <div class="step-h">Confirmá por WhatsApp</div>
-                    <div class="step-p">Hacé clic en "Confirmar pedido por WhatsApp". Se te abre el chat con el detalle listo para enviárnoslo.</div>
+                    <div class="step-h">Enviá por WhatsApp</div>
+                    <div class="step-p">Toca en "Confirmar Pedido por WhatsApp" para enviarnos la lista estructurada y coordinar la reserva.</div>
                 </div>
             </div>
         </div>
@@ -727,7 +222,7 @@
     <div class="modal-overlay" id="cart-modal">
         <div class="modal-container">
             <div class="modal-header">
-                <div class="modal-title">Carrito de Compras</div>
+                <div class="modal-title">Tu Carrito de Pedido</div>
                 <button class="btn-close-modal" onclick="toggleCart()">✕</button>
             </div>
             <div class="modal-body" id="cart-items-container"></div>
@@ -746,58 +241,58 @@
     <div class="modal-overlay" id="guide-modal">
         <div class="modal-container">
             <div class="modal-header">
-                <div class="modal-title">Guía de Compra</div>
+                <div class="modal-title">Guía de Compra para Clientes</div>
                 <button class="btn-close-modal" onclick="closeGuideModal()">✕</button>
             </div>
             <div class="modal-body">
-                <p style="margin-bottom: 1rem; color: var(--text-secondary);">¡Bienvenidos a <strong>SANVAL</strong>! Nuestro proceso para reservar artículos para el próximo viaje es muy fácil:</p>
+                <p style="margin-bottom: 1rem; color: var(--text-secondary);">¡Bienvenido a <strong>SANVAL</strong>! Realizamos compras directamente en tiendas oficiales de EE. UU. (Apple Store, Stanley Official, Amazon US, Nike Store):</p>
                 <ol style="padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.8;">
-                    <li><strong>Filtrá por Categoría:</strong> Usá el menú superior para ver la ropa desglosada, tecnología, artículos del hogar o fitness.</li>
-                    <li><strong>Agregá Ítems:</strong> Los precios mostrados ya incluyen la ganancia del 10% sobre el costo en dólares.</li>
-                    <li><strong>Verificá el Carrito:</strong> Modificá cantidades o eliminá productos antes de confirmar.</li>
-                    <li><strong>Envío Directo:</strong> Al tocar el botón verde, se abre tu WhatsApp con un mensaje pre-armado con todo el pedido detallado.</li>
+                    <li><strong>Explorá el catálogo:</strong> Usá los botones superiores para filtrar por tipo de producto.</li>
+                    <li><strong>Revisá las publicaciones:</strong> Cada producto tiene un enlace opcional para verificar el ítem en Amazon o sitio oficial.</li>
+                    <li><strong>Añadí al carrito:</strong> Elegí las unidades de cada modelo que quieras encargar.</li>
+                    <li><strong>Conectate por WhatsApp:</strong> Al finalizar, el sistema genera automáticamente el resumen con el precio final en dólares listo para enviarnos por mensaje.</li>
                 </ol>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 SANVAL Store. Todos los derechos reservados. Preventa oficial para el viaje a EE. UU.</p>
+        <p>&copy; 2026 SANVAL Store. Todos los derechos reservados. Preventa directa de importación EE. UU.</p>
     </footer>
 
     <script>
-        const MARGIN = 0.10; // 10% de ganancia sobre el valor base
-        const WHATSAPP_PHONE = "5491100000000"; // Poné acá tu celular argentino (ej: 5491122334455)
+        // CONFIGURACIÓN DE MARGEN (10% sobre valor oficial)
+        const MARGIN = 0.10; 
+        const WHATSAPP_PHONE = "5491100000000"; // Poné tu WhatsApp acá
 
+        // BASE DE DATOS EXTENSA CON VALORES OFICIALES Y ENLACES
         const rawProducts = [
-            // ROPA (DESGLOSADA)
-            { id: 101, category: "Ropa - Hombre", name: "Remera Oversize Algodón Pesado", basePrice: 20.00, desc: "Algodón premium 240 GSM, corte streetwear vintage wash.", img: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500" },
-            { id: 102, category: "Ropa - Hombre", name: "Pantalón Jogger Fleece Slim", basePrice: 28.00, desc: "Frisa ultra suave con bolsillos con cierre reforzado.", img: "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?w=500" },
-            { id: 103, category: "Ropa - Mujer", name: "Leggings Seamless Tiro Alto", basePrice: 24.00, desc: "Tela elastizada 4 vías a prueba de sentadillas, deportiva.", img: "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=500" },
-            { id: 104, category: "Ropa - Mujer", name: "Crop Top Crop Ribbed", basePrice: 15.00, desc: "Tejido canelado elastizado, liviano y fresco.", img: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500" },
-            { id: 105, category: "Ropa - Abrigos", name: "Campera Rompevientos Impermeable", basePrice: 42.00, desc: "Campera liviana con capucha, puños elastizados y protección contra lluvia.", img: "https://images.unsplash.com/photo-1544441893-675973e31985?w=500" },
-            { id: 106, category: "Ropa - Accesorios", name: "Gorra Gabardina Unissex", basePrice: 14.00, desc: "Gorra clásica de 6 paneles ajustables en gabardina de algodón.", img: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=500" },
+            // --- IPHONES ---
+            { id: 101, category: "iPhones", name: "Apple iPhone 15 Pro Max (256GB)", basePrice: 1199.00, desc: "Pantalla Super Retina XDR 6.7\", Chip A17 Pro, Titanio Natural.", officialUrl: "https://www.apple.com/shop/buy-iphone/iphone-15-pro", img: "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=500" },
+            { id: 102, category: "iPhones", name: "Apple iPhone 15 Pro (128GB)", basePrice: 999.00, desc: "Cámara principal de 48MP, Botón de Acción, Diseño en Titanio.", officialUrl: "https://www.apple.com/shop/buy-iphone/iphone-15-pro", img: "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=500" },
+            { id: 103, category: "iPhones", name: "Apple iPhone 15 (128GB)", basePrice: 799.00, desc: "Dynamic Island, Cámara de 48 MP, USB-C, Vidrio infusionado con color.", officialUrl: "https://www.apple.com/shop/buy-iphone/iphone-15", img: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=500" },
+            { id: 104, category: "iPhones", name: "Apple iPhone 14 (128GB)", basePrice: 699.00, desc: "Modo Acción para videos estables, Detección de Accidentes.", officialUrl: "https://www.amazon.com/dp/B0BNL36K2R", img: "https://images.unsplash.com/photo-1663499482523-1c0c1bae4ce1?w=500" },
+            { id: 105, category: "iPhones", name: "Apple iPhone 13 (128GB)", basePrice: 599.00, desc: "Sistema de dos cámaras avanzado, Chip A15 Bionic, gran autonomía.", officialUrl: "https://www.amazon.com/dp/B09G9FPGTN", img: "https://images.unsplash.com/photo-1632661674596-df8be070a5c5?w=500" },
 
-            // ELECTRÓNICA (DESGLOSADA)
-            { id: 201, category: "Electrónica - Audio", name: "Auriculares Inalámbricos ANC", basePrice: 35.00, desc: "Cancelación de ruido activa y estuche con 30h de batería.", img: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500" },
-            { id: 202, category: "Electrónica - Audio", name: "Parlante Bluetooth Resistente al Agua", basePrice: 30.00, desc: "Certificación IPX7, graves profundos y tamaño portátil.", img: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500" },
-            { id: 203, category: "Electrónica - Wearables", name: "Smartwatch Deportivo Fitness", basePrice: 45.00, desc: "Sensor ritmo cardíaco, podómetro, seguimiento del sueño y pantalla OLED.", img: "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=500" },
-            { id: 204, category: "Electrónica - Cargadores", name: "Estación Carga Inalámbrica 3 en 1", basePrice: 28.00, desc: "Base magnética para celular, smartwatch y auriculares a la vez.", img: "https://images.unsplash.com/photo-1622445268121-8a1d708176b1?w=500" },
-            { id: 205, category: "Electrónica - Cargadores", name: "Power Bank 20.000mAh Carga Rápida", basePrice: 25.00, desc: "Batería portátil de alta capacidad con salidas USB-C y USB-A.", img: "https://images.unsplash.com/photo-1609592424109-dd9892f1b177?w=500" },
-            { id: 206, category: "Electrónica - Setup", name: "Teclado Mecánico Gaming RGB", basePrice: 40.00, desc: "Switches mecánicos táctiles con múltiples modos de luces RGB.", img: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500" },
+            // --- TERMOS Y STANLEY ---
+            { id: 201, category: "Stanley & Mates", name: "Stanley Classic Legend Bottle (1.5 QT / 1.4L)", basePrice: 45.00, desc: "Termo clásico verde/hammertone, mantiene el agua caliente por 40hs.", officialUrl: "https://www.stanley1913.com/products/classic-legendary-bottle-1-5-qt", img: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500" },
+            { id: 202, category: "Stanley & Mates", name: "Stanley Quencher H2.0 FlowState Tumbler (40oz)", basePrice: 45.00, desc: "El vaso térmico con manija y sorbete más vendido en USA.", officialUrl: "https://www.stanley1913.com/products/the-quench-h2-0-flowstate-tumbler-40-oz", img: "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=500" },
+            { id: 203, category: "Stanley & Mates", name: "Mate Stanley System Mate (236ml)", basePrice: 35.00, desc: "Mate de acero inoxidable de doble pared, mantiene la temperatura.", officialUrl: "https://www.stanley1913.com", img: "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?w=500" },
+            { id: 204, category: "Stanley & Mates", name: "Stanley IceFlow Flip Straw Tumbler (30oz)", basePrice: 35.00, desc: "Botella con pico rebatible ideal para entrenamiento o auto.", officialUrl: "https://www.amazon.com/dp/B08X69DFL6", img: "https://images.unsplash.com/photo-1544816155-12df9643f363?w=500" },
 
-            // HOGAR Y ESTILO
-            { id: 301, category: "Hogar y Estilo", name: "Vaso Térmico 32oz Acero Inoxidable", basePrice: 18.00, desc: "Conserva bebidas frías por 24h o calientes por 12h.", img: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500" },
-            { id: 302, category: "Hogar y Estilo", name: "Difusor Aromático Ultrasónico", basePrice: 22.00, desc: "Capacidad 300ml con luces LED ambientadoras.", img: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=500" },
-            { id: 303, category: "Hogar y Estilo", name: "Almohada Cervical Inteligente", basePrice: 32.00, desc: "Memory foam ortopédico para descanso y soporte de cuello.", img: "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=500" },
-            { id: 304, category: "Hogar y Estilo", name: "Lámpara LED de Escritorio Táctil", basePrice: 26.00, desc: "Luz dimable con puerto de carga USB integrado.", img: "https://images.unsplash.com/photo-1534073828943-f801091bb18c?w=500" },
+            // --- TECNOLOGÍA APPLE & AUDIO ---
+            { id: 301, category: "Tecnología Apple", name: "Apple AirPods Pro (2da Generación USB-C)", basePrice: 249.00, desc: "Cancelación de ruido hasta 2x más potente, Audio Espacial.", officialUrl: "https://www.apple.com/airpods-pro/", img: "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=500" },
+            { id: 302, category: "Tecnología Apple", name: "Apple MacBook Air 13\" (Chip M2)", basePrice: 999.00, desc: "8GB RAM, 256GB SSD, diseño ultra delgado sin ventilador.", officialUrl: "https://www.apple.com/shop/buy-mac/macbook-air/13-inch-m2", img: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500" },
+            { id: 303, category: "Tecnología Apple", name: "Apple Watch Series 9 (GPS 41mm)", basePrice: 399.00, desc: "Chip S9, Pantalla más brillante, gesto de doble toque.", officialUrl: "https://www.apple.com/apple-watch-series-9/", img: "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=500" },
+            { id: 304, category: "Tecnología Apple", name: "Apple iPad Air 11\" M2 (128GB)", basePrice: 599.00, desc: "Pantalla Liquid Retina, compatible con Apple Pencil Pro.", officialUrl: "https://www.apple.com/ipad-air/", img: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500" },
 
-            // FITNESS Y DEPORTES
-            { id: 401, category: "Fitness y Deportes", name: "Set Banda de Resistencia Reforzadas", basePrice: 16.00, desc: "Set de 5 bandas elásticas con manijas y anclaje de puerta.", img: "https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=500" },
-            { id: 402, category: "Fitness y Deportes", name: "Mat de Yoga Antideslizante 6mm", basePrice: 25.00, desc: "Colchoneta acolchada TPE ecológica con líneas de postura.", img: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=500" },
-            { id: 403, category: "Fitness y Deportes", name: "Pistola de Masajes Musculares", basePrice: 48.00, desc: "Masajeador de percusión silencioso con 6 cabezales intercambiables.", img: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500" }
+            // --- ROPA Y CALZADO USA ---
+            { id: 401, category: "Ropa & Calzado", name: "Zapatillas Nike Air Force 1 '07", basePrice: 115.00, desc: "El clásico modelo urbano en cuero blanco de Nike.", officialUrl: "https://www.nike.com/t/air-force-1-07-mens-shoes-jBr2Pn", img: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500" },
+            { id: 402, category: "Ropa & Calzado", name: "Campera Levi's Original Trucker Denim", basePrice: 89.50, desc: "Campera de jean clásica 100% algodón, calce regular.", officialUrl: "https://www.amazon.com/dp/B0018OR0KC", img: "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=500" },
+            { id: 403, category: "Ropa & Calzado", name: "Buzo Adidas Trefoil Essential Hoodie", basePrice: 65.00, desc: "Buzo con capucha frizado y bordado frontal icónico.", officialUrl: "https://www.adidas.com/us", img: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=500" }
         ];
 
+        // Aplicar 10% automáticamente
         const products = rawProducts.map(p => ({
             ...p,
             price: Number((p.basePrice * (1 + MARGIN)).toFixed(2))
@@ -830,7 +325,7 @@
                 : products.filter(p => p.category === activeCategory);
 
             document.getElementById('current-category-name').innerText = activeCategory === "Todos" ? "Todos los Productos" : activeCategory;
-            document.getElementById('product-count').innerText = `${filtered.length} artículos disponibles`;
+            document.getElementById('product-count').innerText = `${filtered.length} artículos`;
 
             grid.innerHTML = filtered.map(p => `
                 <div class="product-card">
@@ -842,10 +337,13 @@
                         <div>
                             <h3 class="product-name">${p.name}</h3>
                             <p class="product-desc">${p.desc}</p>
+                            <a href="${p.officialUrl}" target="_blank" rel="noopener" class="official-link">
+                                🔗 Ver en tienda oficial / Amazon ↗
+                            </a>
                         </div>
                         <div class="product-footer">
                             <div class="price-wrapper">
-                                <span class="price-label">Precio Preventa</span>
+                                <span class="price-label">Precio Reserva</span>
                                 <span class="price-val">$${p.price.toFixed(2)} USD</span>
                             </div>
                             <button class="btn-add-cart" onclick="addToCart(${p.id})">
@@ -887,7 +385,7 @@
             const container = document.getElementById('cart-items-container');
             
             if (cart.length === 0) {
-                container.innerHTML = '<div class="empty-cart-msg"><p>Tu carrito está vacío.</p></div>';
+                container.innerHTML = '<div class="empty-cart-msg"><p>El carrito está vacío.</p></div>';
             } else {
                 container.innerHTML = cart.map(item => `
                     <div class="cart-item">
@@ -910,8 +408,7 @@
 
         function toggleCart() {
             const modal = document.getElementById('cart-modal');
-            const isVisible = modal.style.display === 'flex';
-            modal.style.display = isVisible ? 'none' : 'flex';
+            modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex';
         }
 
         function openGuideModal() {
@@ -924,7 +421,7 @@
 
         function checkoutWhatsApp() {
             if (cart.length === 0) {
-                alert("Agregá productos al carrito antes de confirmar el pedido.");
+                alert("Agregá artículos al carrito antes de enviar tu pedido.");
                 return;
             }
 
@@ -941,8 +438,8 @@
             });
 
             message += "--------------------------------------\n";
-            message += `💰 *TOTAL A PAGAR: $${total.toFixed(2)} USD*\n\n`;
-            message += "¡Hola! Quisiera reservar estos productos para el próximo viaje. ¿Cómo coordinamos la seña o pago?";
+            message += `💰 *TOTAL RESERVA: $${total.toFixed(2)} USD*\n\n`;
+            message += "¡Hola SANVAL! Quisiera encargar estos productos para el próximo viaje a EE. UU. ¿Cómo coordinamos la seña?";
 
             const encodedMessage = encodeURIComponent(message);
             window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${encodedMessage}`, '_blank');
